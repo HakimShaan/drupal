@@ -1,0 +1,53 @@
+<?php 
+
+/*
+--------------            $PATH         ------------------
+path provides context for the help , tells drupal where they are in drupal or which module they are currently in 
+ processed with a switch statement 
+
+
+
+
+
+
+
+function current_posts_help($path, $arg) {
+    switch ($path) {
+      case "admin/help#current_posts":
+        return t("Displays links to nodes created on this date"); 
+        break; 
+    }
+  }
+
+
+*/ 
+
+function hakim_help($path, $arg)
+{
+
+
+
+
+
+}
+
+
+
+
+
+
+/*
+Implements hook_form_alter() to show each from's identifier. 
+
+*/
+
+//prefix of drupal function must be info name 
+function hakim_module_form_alter(&$form, &$form_state, $form_id)
+{
+$form['hakim_display_form_id'] = array(
+'#type' => 'item',
+'#title' => t('Form ID'),
+'#markup' => $form_id,
+'#weight' => -100 
+);
+}

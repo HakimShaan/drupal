@@ -1,0 +1,8 @@
+
+#key value pairs
+name = hakims module 
+description = Shows internal structures and connections of the web site. 
+core = 7.x
+
+
+
